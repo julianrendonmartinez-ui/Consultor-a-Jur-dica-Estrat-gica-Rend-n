@@ -698,7 +698,7 @@ html, body {
   letter-spacing: .12em;
   text-transform: uppercase;
   border: 1px solid var(--r-rule, var(--laton-38));
-  padding: 11px 16px;
+  padding: 9px 13px;
   color: var(--r-fg, var(--tinta));
   line-height: 1;
 }
@@ -984,10 +984,10 @@ html, body {
   border: 1px solid rgba(18,35,59,.20);
   background: transparent;
   color: rgba(18,35,59,.72);
-  font: 500 12px/1 var(--sans);
+  font: 500 14px/1 var(--sans);
   letter-spacing: .07em;
   text-transform: uppercase;
-  padding: 9px 13px;
+  padding: 11px 16px;
   cursor: pointer;
   border-radius: 1px;
   transition: all .16s ease;
@@ -995,7 +995,7 @@ html, body {
 .chip:hover { border-color: rgba(18,35,59,.46); color: var(--tinta); }
 .chip[aria-pressed="true"] { background: rgba(18,35,59,.9); border-color: transparent; color: var(--marfil); }
 
-.intro { padding: 46px 30px 0; max-width: 1180px; }
+.intro { padding: 46px 30px 0; max-width: 1500px; }
 
 /* logotipo tipográfico: latón + tinta, calcado del emblema */
 .intro h1.intro__wordmark {
@@ -1042,17 +1042,17 @@ html, body {
   max-width: 900px;
 }
 .intro p {
-  font-size: 15px;
-  line-height: 1.68;
-  color: rgba(18,35,59,.68);
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.7;
+  color: rgba(18,35,59,.78);
   max-width: 720px;
   margin: 0 0 10px;
 }
 .intro__cols {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 0 56px;
-  max-width: 1100px;
+  gap: 0 64px;
+  max-width: 1400px;
   border-top: 1px solid rgba(18,35,59,.14);
   padding-top: 22px;
 }
