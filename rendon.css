@@ -959,7 +959,7 @@ html, body {
 .bar__id { display: flex; align-items: center; gap: 14px; min-width: 0; }
 .bar__logo {
   display: block;
-  height: clamp(56px, 5vw, 84px);
+  height: clamp(56px, 6vw, 120px);
   width: auto;
 }
 .bar__id b {
@@ -984,7 +984,7 @@ html, body {
   border: 1px solid rgba(18,35,59,.20);
   background: transparent;
   color: rgba(18,35,59,.72);
-  font: 500 14px/1 var(--sans);
+  font: 500 clamp(14px, 1vw, 18px)/1 var(--sans);
   letter-spacing: .07em;
   text-transform: uppercase;
   padding: 11px 16px;
@@ -995,7 +995,7 @@ html, body {
 .chip:hover { border-color: rgba(18,35,59,.46); color: var(--tinta); }
 .chip[aria-pressed="true"] { background: rgba(18,35,59,.9); border-color: transparent; color: var(--marfil); }
 
-.intro { padding: 46px 30px 0; max-width: 1500px; }
+.intro { padding: 46px 30px 0; max-width: 2000px; }
 
 /* logotipo tipográfico: latón + tinta, calcado del emblema */
 .intro h1.intro__wordmark {
@@ -1013,7 +1013,7 @@ html, body {
   font-weight: 600;
   font-optical-sizing: auto;
   font-variation-settings: 'SOFT' 0, 'WONK' 0;
-  font-size: clamp(40px, 5.4vw, 92px);
+  font-size: clamp(40px, 6vw, 110px);
   letter-spacing: -.022em;
   color: #B0884C;
   text-wrap: balance;
@@ -1022,7 +1022,7 @@ html, body {
   display: block;
   font-family: var(--sans);
   font-weight: 700;
-  font-size: clamp(18px, 2.3vw, 32px);
+  font-size: clamp(18px, 2.4vw, 44px);
   line-height: 1;
   letter-spacing: .20em;
   text-transform: uppercase;
@@ -1042,7 +1042,7 @@ html, body {
   max-width: 900px;
 }
 .intro p {
-  font-size: clamp(16px, 1.25vw, 20px);
+  font-size: clamp(16px, 1.6vw, 26px);
   line-height: 1.7;
   color: rgba(18,35,59,.78);
   max-width: 720px;
@@ -1051,8 +1051,8 @@ html, body {
 .intro__cols {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 0 64px;
-  max-width: 1400px;
+  gap: 0 72px;
+  max-width: 1800px;
   border-top: 1px solid rgba(18,35,59,.14);
   padding-top: 22px;
 }
@@ -1086,14 +1086,14 @@ html, body {
 .materia__title h2 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(22px, 2.1vw, 30px);
+  font-size: clamp(24px, 2.6vw, 44px);
   line-height: 1.1;
   letter-spacing: -.015em;
   margin: 0;
   color: var(--tinta);
 }
 .materia__count {
-  font-size: 11px;
+  font-size: clamp(11px, .9vw, 15px);
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--laton);
@@ -1102,11 +1102,11 @@ html, body {
 }
 .materia__nota {
   margin: 0;
-  font-size: 12.5px;
+  font-size: clamp(12.5px, 1vw, 17px);
   line-height: 1.5;
-  color: rgba(18,35,59,.52);
+  color: rgba(18,35,59,.62);
   text-align: right;
-  max-width: 420px;
+  max-width: 520px;
 }
 .materia__head::after {
   content: '';
