@@ -959,7 +959,7 @@ html, body {
 .bar__id { display: flex; align-items: center; gap: 14px; min-width: 0; }
 .bar__logo {
   display: block;
-  height: 40px;
+  height: clamp(56px, 5vw, 84px);
   width: auto;
 }
 .bar__id b {
@@ -1013,7 +1013,7 @@ html, body {
   font-weight: 600;
   font-optical-sizing: auto;
   font-variation-settings: 'SOFT' 0, 'WONK' 0;
-  font-size: clamp(32px, 4.3vw, 64px);
+  font-size: clamp(40px, 5.4vw, 92px);
   letter-spacing: -.022em;
   color: #B0884C;
   text-wrap: balance;
@@ -1022,7 +1022,7 @@ html, body {
   display: block;
   font-family: var(--sans);
   font-weight: 700;
-  font-size: clamp(15px, 1.85vw, 24px);
+  font-size: clamp(18px, 2.3vw, 32px);
   line-height: 1;
   letter-spacing: .20em;
   text-transform: uppercase;
